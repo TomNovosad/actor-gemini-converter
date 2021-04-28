@@ -44,7 +44,7 @@ Apify.main(async () => {
 
     // Create new queue
     const requestQueue = await Apify.openRequestQueue();
-    await requestQueue.addRequest({git
+    await requestQueue.addRequest({
         url,
         userData: {
             elements,
