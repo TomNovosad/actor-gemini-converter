@@ -1,0 +1,72 @@
+{
+    "title": "gemini-converter",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "url": {
+            "title": "Url",
+            "type": "string",
+            "description": "Select url for scraping.",
+            "editor": "textfield"
+        },
+        "filename": {
+            "title": "File name",
+            "type": "string",
+            "description": "File name for Gemini capsule.",
+            "editor": "textfield",
+            "prefill": "index.gmi"
+        },
+        "elements": {
+            "title": "Elements",
+            "type": "array",
+            "description": "Enter array of elements to convert.",
+            "prefill": [
+                {
+                    "path": "li > a",
+                    "type": "link"
+                },
+                {
+                    "path": "p",
+                    "type": "text"
+                },
+                {
+                    "path": "h1",
+                    "type": "heading1"
+                },
+                {
+                    "path": "h2",
+                    "type": "heading2"
+                },
+                {
+                    "path": "h3",
+                    "type": "heading3"
+                },
+                {
+                    "path": "li",
+                    "type": "list"
+                },
+                {
+                    "path": "div > blockquote",
+                    "type": "blockquote"
+                },
+                {
+                    "path": "div > pre",
+                    "type": "preformatted"
+                }
+            ],
+            "editor": "json"
+        },
+        "development": {
+            "title": "Development mode",
+            "type": "boolean",
+            "default": false,
+            "description": "Run in the development mode.",
+            "sectionCaption": "Features and flags"
+        }
+    },
+    "required": [
+        "url",
+        "filename",
+        "elements"
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "name": "gemini-converter",
+    "version": "0.0.1",
+    "buildTag": "latest",
+    "env": null,
+    "template": "project_puppeteer_crawler"
+}
