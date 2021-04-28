@@ -50,3 +50,8 @@ Where:
   ]
 }
 ```
+
+
+## Gemini server for testing
+
+I recommend using [Agate](https://github.com/timwalls/agate) server for Gemini network protocol.
